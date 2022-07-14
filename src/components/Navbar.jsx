@@ -37,14 +37,14 @@ function Nav() {
                   </a>
 
                   <a
-                    href="/"
+                    href="/team"
                     className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   >
                     Team
                   </a>
 
                   <a
-                    href="/"
+                    href="/gallery"
                     className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                   >
                     Gallery
@@ -140,14 +140,14 @@ function Nav() {
                 </a>
 
                 <a
-                  href="/"
+                  href="/team"
                   className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Team
                 </a>
 
                 <a
-                  href="/"
+                  href="/gallery"
                   className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Gallery
