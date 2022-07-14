@@ -11,12 +11,14 @@ function Nav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center w-full justify-between">
               <div className="flex-shrink-0 ml-2">
-                <img
-                  className="h-12"
-                  src="./images/logo.png"
-                  alt="Workflow"
-                  draggable="false"
-                />
+                <a href="/">
+                  <img
+                    className="h-12"
+                    src="./images/logo.png"
+                    alt="Workflow"
+                    draggable="false"
+                  />
+                </a>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-5">
