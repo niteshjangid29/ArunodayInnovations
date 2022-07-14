@@ -1,30 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { sliderData } from "../Data/sponsorsData";
 
 const Sponsors = () => {
-  const sliderData = [
-    {
-      logo: "./images/startUpIndia.png",
-      title: "StartUp India",
-    },
-    {
-      logo: "./images/iitRoorkee.png",
-      title: "IIT Roorkee",
-    },
-    {
-      logo: "./images/tides.png",
-      title: "Tides",
-    },
-    {
-      logo: "./images/nidhiPrayas.png",
-      title: "Nidhi Prayas",
-    },
-    {
-      logo: "./images/DST.png",
-      title: "DST",
-    },
-  ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const length = sliderData.length;
   const slides = document.getElementsByClassName("slide");
@@ -93,9 +71,19 @@ const Sponsors = () => {
         </div>
       </div>
 
-
       <div className="md:flex hidden flex-wrap justify-center w-3/5 m-auto">
-        <img
+        {sliderData.map((slide, index) => {
+          return (
+            <img
+              className="w-16 p-2 md:p-6 basis-1/5"
+              src={slide.logo}
+              alt={slide.title}
+              key={index}
+            />
+          );
+        })}
+        
+        {/* <img
           className="w-16 p-2 md:p-6 basis-1/5"
           src="./images/DST.png"
           alt="DST"
@@ -119,7 +107,7 @@ const Sponsors = () => {
           className="w-16 p-2 md:p-6 basis-1/5"
           src="./images/startUpIndia.png"
           alt="startUpIndia"
-        />
+        /> */}
       </div>
     </div>
   );

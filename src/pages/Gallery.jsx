@@ -1,33 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { gallery } from "../Data/galleryData";
 
 const Gallery = () => {
-  const gallery = [
-    {
-      image: "./images/img1.jpeg",
-      title: "img1",
-    },
-    {
-      image: "./images/img2.jpeg",
-      title: "img2",
-    },
-    {
-      image: "./images/img3.jpeg",
-      title: "img3",
-    },
-    {
-      image: "./images/img4.jpeg",
-      title: "img4",
-    },
-    {
-      image: "./images/img5.jpeg",
-      title: "img5",
-    },
-    {
-      image: "./images/img5.jpeg",
-      title: "img5",
-    },
-  ];
   return (
     <div>
       <Navbar />
@@ -44,11 +19,11 @@ const Gallery = () => {
           <div class="row-span-2 w-full h-full rounded-md md:rounded-xl">
             <img className="w-full h-full rounded-md md:rounded-xl" src={gallery[2].image} alt={gallery.title} />
           </div>
-          <div class="row-span-4 w-full h-full rounded-md md:rounded-xl">
-            <img className="w-full h-full rounded-md md:rounded-xl" src={gallery[3].image} alt={gallery.title} />
-          </div>
           <div class="row-span-2 w-full h-full rounded-md md:rounded-xl">
             <img className="w-full h-full rounded-md md:rounded-xl" src={gallery[4].image} alt={gallery.title} />
+          </div>
+          <div class="row-span-4 w-full h-full rounded-md md:rounded-xl">
+            <img className="w-full h-full rounded-md md:rounded-xl" src={gallery[3].image} alt={gallery.title} />
           </div>
           <div class="row-span-2 w-full h-full rounded-md md:rounded-xl">
             <img className="w-full h-full rounded-md md:rounded-xl" src={gallery[5].image} alt={gallery.title} />

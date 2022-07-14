@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-// import { Navigate } from "react-router";
+import { navbarItems } from "../Data/navbarData";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,51 +11,25 @@ function Nav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center w-full justify-between">
               <div className="flex-shrink-0 ml-2">
-                <img className="h-12" src="./images/logo.png" alt="Workflow" draggable="false" />
+                <img
+                  className="h-12"
+                  src="./images/logo.png"
+                  alt="Workflow"
+                  draggable="false"
+                />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-5">
-                  <a
-                    href="/"
-                    className=" hover:bg-orange-400 text-black hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  >
-                    Home
-                  </a>
-
-                  <a
-                    href="/"
-                    className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  >
-                    About
-                  </a>
-
-                  <a
-                    href="/"
-                    className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  >
-                    Projects
-                  </a>
-
-                  <a
-                    href="/team"
-                    className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  >
-                    Team
-                  </a>
-
-                  <a
-                    href="/gallery"
-                    className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  >
-                    Gallery
-                  </a>
-
-                  <a
-                    href="/"
-                    className="text-black hover:bg-orange-400 hover:text-white px-3 py-2 rounded-md text-md font-medium"
-                  >
-                    Contact
-                  </a>
+                  {navbarItems.map((navbarItem, index) => {
+                    return (
+                      <a
+                        href={navbarItem.itemUrl}
+                        className=" hover:bg-orange-400 text-black hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                      >
+                        {navbarItem.itemName}
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -118,47 +92,16 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="/"
-                  className="hover:bg-orange-400 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Home
-                </a>
-
-                <a
-                  href="/"
-                  className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  About
-                </a>
-
-                <a
-                  href="/"
-                  className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Projects
-                </a>
-
-                <a
-                  href="/team"
-                  className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Team
-                </a>
-
-                <a
-                  href="/gallery"
-                  className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Gallery
-                </a>
-
-                <a
-                  href="/"
-                  className="text-black hover:bg-orange-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Contact
-                </a>
+                {navbarItems.map((navbarItem, index) => {
+                  return (
+                    <a
+                      href={navbarItem.itemUrl}
+                      className=" hover:bg-orange-400 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    >
+                      {navbarItem.itemName}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           )}
