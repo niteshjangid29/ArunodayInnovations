@@ -12,6 +12,10 @@ export const sliderData = [
     title: "IIT Roorkee",
   },
   {
+    logo: "./images/iHubDivyasampark.png",
+    title: "iHub Divyasampark"
+  },
+  {
     logo: "./images/tides.png",
     title: "Tides",
   },

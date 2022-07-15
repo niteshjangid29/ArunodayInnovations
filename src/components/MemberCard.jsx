@@ -9,7 +9,7 @@ const MemberCard = (props) => {
       <div className="xl:basis-3/4 md:basis-2/3 flex flex-col p-5">
         <h1 className="font-bold text-lg">{props.name}</h1>
         <h2 className="font-semibold text-md">{props.position}</h2>
-        <p>{props.about}</p>
+        <p className="text-justify">{props.about}</p>
         <div className="flex w-full justify-end">
           <a
             className="pt-2 pb-2.5 px-3 rounded-md leading-none bg-red-500 text-white font-semibold"

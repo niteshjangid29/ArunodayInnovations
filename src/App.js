@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import { FontAwesomeIcon } from './components/FontAwesomeIcons'
 import Gallery from "./pages/Gallery";
 import Team from "./pages/Team";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/gallery" element={<Gallery />}></Route>
           <Route exact path="/team" element={<Team />}></Route>
         </Routes>

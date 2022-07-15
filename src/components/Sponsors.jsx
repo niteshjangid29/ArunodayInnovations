@@ -71,11 +71,11 @@ const Sponsors = () => {
         </div>
       </div>
 
-      <div className="md:flex hidden flex-wrap justify-center w-3/5 m-auto">
+      <div className="md:flex hidden flex-wrap justify-center lg:w-3/5 w-4/5 m-auto">
         {sliderData.map((slide, index) => {
           return (
             <img
-              className="w-16 p-2 md:p-6 basis-1/5"
+              className="w-16 p-2 md:p-6 basis-1/6"
               src={slide.logo}
               alt={slide.title}
               key={index}

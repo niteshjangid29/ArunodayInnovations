@@ -5,7 +5,7 @@ export const navbarItems = [
     },
     {
         itemName: "About",
-        itemUrl: "/"
+        itemUrl: "/about"
     },
     {
         itemName: "Projects",
