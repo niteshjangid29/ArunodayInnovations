@@ -4,7 +4,7 @@ const MemberCard = (props) => {
   return (
     <div className="flex flex-col w-11/12 sm:w-3/5 md:flex-row lg:w-3/5 md:w-4/5 bg-white rounded-xl overflow-hidden my-6 drop-shadow-[0px_3px_3px_rgba(0,0,0,0.3)]">
       <div className="xl:basis-1/4 md:basis-1/3">
-        <img className="w-full h-full" src={props.image} alt="sohom" />
+        <img className="w-full h-full" src={props.image} alt="sohom" draggable="false" />
       </div>
       <div className="xl:basis-3/4 md:basis-2/3 flex flex-col p-5">
         <h1 className="font-bold text-lg">{props.name}</h1>

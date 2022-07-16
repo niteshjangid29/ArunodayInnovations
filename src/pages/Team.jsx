@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import MemberCard from "../components/MemberCard";
 import { teamMembers } from "../Data/teamMembersData";
+import Footer from "../components/Footer";
 
 const Team = () => {
   return (
@@ -25,6 +26,8 @@ const Team = () => {
           );
         })}
       </div>
+
+      <Footer/>
     </div>
   );
 };

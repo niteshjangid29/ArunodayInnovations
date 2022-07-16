@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from './components/FontAwesomeIcons'
 import Gallery from "./pages/Gallery";
 import Team from "./pages/Team";
 import About from "./pages/About";
+import Projects from './pages/Projects';
+import Carrier from './pages/Carrier';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/gallery" element={<Gallery />}></Route>
           <Route exact path="/team" element={<Team />}></Route>
+          <Route exact path="/projects" element={<Projects />}></Route>
+          <Route exact path="/carrier" element={<Carrier />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

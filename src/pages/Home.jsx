@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Sponsors from "../components/Sponsors";
 import MemberCard from "../components/MemberCard";
 import { teamMembers } from "../Data/teamMembersData";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Navbar />
       <Sponsors />
 
-      <div className="flex flex-col my-6 py-6 md:py-10 items-center bg-orange-100">
+      <div className="flex flex-col py-6 md:py-10 items-center bg-orange-100">
         <h1 className="font-semibold md:font-medium text-xl md:text-2xl lg:text-3xl">
           - Board Members -
         </h1>
@@ -28,6 +29,8 @@ const Home = () => {
           );
         })}
       </div>
+
+      <Footer/>
     </div>
   );
 };

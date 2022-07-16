@@ -59,7 +59,7 @@ const Sponsors = () => {
               >
                 {index === currentSlide && (
                   <div>
-                    <img src={slide.logo} alt={slide.title} />
+                    <img src={slide.logo} alt={slide.title} draggable="false" />
                   </div>
                 )}
               </div>
@@ -79,6 +79,7 @@ const Sponsors = () => {
               src={slide.logo}
               alt={slide.title}
               key={index}
+              draggable="false"
             />
           );
         })}

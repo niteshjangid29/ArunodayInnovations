@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navbar from "./../components/Navbar";
 
 const About = () => {
@@ -7,9 +8,9 @@ const About = () => {
       <Navbar />
 
       <div>
-        <div className="flex flex-col py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
+        <div className="flex flex-col py-16 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
           <h1 className="font-[poppins] font-[600] text-3xl text-center mb-5">- About Us -</h1>
-          <img className="md:w-3/6 w-5/6 m-auto" src="./images/logo.png" alt="logo" />
+          {/* <img className="md:w-3/6 w-5/6 mb-3 m-auto" src="./images/logo.png" alt="logo" draggable="false" /> */}
           <div>
             <p className="font-[poppins] tracking-wide text-justify">Arunoday Innovations and Research is one of the fastest-growing companies for automation and robotics. Its innovations on Automated Mobile Robots used in housing and urban industries, Agriculture, Waste management division, Power plants, and other sectors to safely carry different weights of payload from one industrial place to another industrial place. Arunoday Innovations and Research is a start-up from IIT Roorkee, one of the prestigious institutes of India. Its board of directors includes Professor and Research Scholar from IIT Roorkee. Arunoday Innovations and Research has a highly dedicated team of professionals, including Ph.D., M.Tech, and B.Tech students from IITs and other top institutes in India. It has outreach in more than three states of India.</p>
           </div>
@@ -18,7 +19,7 @@ const About = () => {
 
 
       <div className="bg-orange-100 py-8">
-        <div className="flex flex-col py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
+        <div className="flex flex-col py-16 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
           <h1 className="font-[poppins] font-[600] text-3xl text-center">
             - Mission and Vision -
           </h1>
@@ -51,7 +52,7 @@ const About = () => {
       </div>
 
       <div>
-        <div className="flex flex-col py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
+        <div className="flex flex-col py-20 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
           <h1 className="font-[poppins] font-[600] text-3xl text-center mb-5">
             - Our Achievements -
           </h1>
@@ -84,6 +85,8 @@ const About = () => {
           </ul>
         </div>
       </div>
+
+      <Footer/>
     </div>
   );
 };
