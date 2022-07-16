@@ -1,8 +1,21 @@
-import React from "react";
+import React, {useRef} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
     let currentYear = new Date().getFullYear();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('service_iat9r4b', 'template_jzczp7n', e.target, 'sNLly9jYsR3QeE2Fg')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+      e.target.reset();
+    };
 
   return (
     <footer className="bg-[#2d2f39] text-white font-[poppins]">
@@ -35,23 +48,24 @@ const Footer = () => {
 
       <div className="flex flex-col lg:flex-row py-10 lg:w-11/12 m-auto items-center">
         <div className="lg:basis-2/5 w-11/12 sm:w-5/6 md:w-4/6 bg-gray-300 text-black p-5 rounded-md">
-          <form action="" className="flex flex-col items-center">
+          <form onSubmit={sendEmail} className="flex flex-col items-center">
             <input
               className="outline-none border-2 p-2 bg-yellow-100 m-2 rounded-md focus:border-black w-full"
               type="text"
+              name="user_name"
               placeholder="Name"
               required
             />
             <input
               className="outline-none border-2 p-2 bg-yellow-100 m-2 rounded-md focus:border-black w-full"
               type="email"
+              name="user_email"
               placeholder="Email"
               required
             />
             <textarea
               className="outline-none border-2 p-2 bg-yellow-100 m-2 rounded-md focus:border-black w-full max-h-28"
-              name=""
-              id=""
+              name="user_message"
               cols="30"
               rows="4"
               placeholder="Message"

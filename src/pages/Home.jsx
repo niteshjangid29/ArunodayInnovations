@@ -12,7 +12,7 @@ const Home = () => {
       <Sponsors />
 
       <div className="flex flex-col py-6 md:py-10 items-center bg-orange-100">
-        <h1 className="font-semibold md:font-medium text-xl md:text-2xl lg:text-3xl">
+        <h1 className="font-[poppins] font-[600] text-2xl md:text-3xl">
           - Board Members -
         </h1>
 

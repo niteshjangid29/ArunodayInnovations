@@ -41,7 +41,7 @@ const Sponsors = () => {
 
   return (
     <div className="flex flex-col py-16">
-      <h1 className="flex justify-center text-xl md:text-2xl lg:text-3xl font-medium mb-5">
+      <h1 className="flex justify-center text-xl md:text-2xl lg:text-3xl font-[600] mb-5 font-[poppins]">
         Trusted and Supported By
       </h1>
       <div className="md:hidden flex justify-evenly items-center">

@@ -9,7 +9,7 @@ const Team = () => {
     <div>
       <Navbar />
       <div className="flex flex-col my-6 py-6 md:py-10 items-center">
-        <h1 className="font-semibold md:font-bold text-xl md:text-2xl">
+        <h1 className="font-[600] text-2xl md:text-3xl font-[poppins]">
           - Board Members -
         </h1>
 
