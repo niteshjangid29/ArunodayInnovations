@@ -1,50 +1,66 @@
-import React, {useRef} from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
+import contactInfo from "../config/default";
 
 const Footer = () => {
-    let currentYear = new Date().getFullYear();
+  let currentYear = new Date().getFullYear();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-      emailjs.sendForm('service_iat9r4b', 'template_jzczp7n', e.target, 'sNLly9jYsR3QeE2Fg')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-      e.target.reset();
-    };
+    emailjs
+      .sendForm(
+        contactInfo.YOUR_SERVICE_ID,
+        contactInfo.YOUR_TEMPLATE_ID,
+        e.target,
+        contactInfo.YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <footer className="bg-[#2d2f39] text-white font-[poppins]">
-
       <div className="text-center py-12">
         <h1 className="text-3xl font-[500] mb-4">Our Social Media</h1>
         <div className="flex justify-center text-black">
-          <a href="/"><FontAwesomeIcon
-            className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
-            icon="fa-brands fa-instagram"
-          /></a>
-          <a href="/"><FontAwesomeIcon
-            className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
-            icon="fa-brands fa-twitter"
-          /></a>
-          <a href="/"><FontAwesomeIcon
-            className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
-            icon="fa-brands fa-facebook-f"
-          /></a>
-          <a href="/"><FontAwesomeIcon
-            className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
-            icon="fa-brands fa-linkedin-in"
-          /></a>
+          <a href="/">
+            <FontAwesomeIcon
+              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
+              icon="fa-brands fa-instagram"
+            />
+          </a>
+          <a href="/">
+            <FontAwesomeIcon
+              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
+              icon="fa-brands fa-twitter"
+            />
+          </a>
+          <a href="/">
+            <FontAwesomeIcon
+              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
+              icon="fa-brands fa-facebook-f"
+            />
+          </a>
+          <a href="/">
+            <FontAwesomeIcon
+              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
+              icon="fa-brands fa-linkedin-in"
+            />
+          </a>
         </div>
       </div>
 
-
       <hr className="w-full h-0.5 border-none bg-white" />
-
 
       <div className="flex flex-col lg:flex-row py-10 lg:w-11/12 m-auto items-center">
         <div className="lg:basis-2/5 w-11/12 sm:w-5/6 md:w-4/6 bg-gray-300 text-black p-5 rounded-md">
@@ -68,7 +84,7 @@ const Footer = () => {
               name="user_message"
               cols="30"
               rows="4"
-              placeholder="Message"
+              placeholder="Messages"
             ></textarea>
             <input
               className="outline-none p-2 px-5 border-2 border-black cursor-pointer bg-yellow-100 m-2 rounded-md max-w-fit font-[600] hover:bg-black hover:text-white transition-all delay-75"
@@ -78,13 +94,25 @@ const Footer = () => {
           </form>
         </div>
         <div className="lg:basis-1/5 flex flex-col text-center my-5">
-          <h2 className="font-[500] text-lg my-3 underline underline-offset-2">Quick Links</h2>
+          <h2 className="font-[500] text-lg my-3 underline underline-offset-2">
+            Quick Links
+          </h2>
           <ul className="flex lg:flex-col">
-            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75"><a href="/about">About</a></li>
-            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75"><a href="/team">Team</a></li>
-            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75"><a href="/carrier">Carrier</a></li>
-            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75"><a href="/projects">Projects</a></li>
-            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75"><a href="/gallery">Gallery</a></li>
+            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
+              <Link to="/team">Team</Link>
+            </li>
+            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
+              <Link to="/carrier">Carrier</Link>
+            </li>
+            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
+              <Link to="/gallery">Gallery</Link>
+            </li>
           </ul>
         </div>
         <div className="lg:basis-2/5 w-11/12 flex flex-col">
@@ -111,7 +139,10 @@ const Footer = () => {
                 className="hidden pp2:block md:text-xl mr-2"
                 icon="fa-solid fa-envelope"
               />
-              <a className="text-xs pp1:text-sm md:text-base mr-2" href="mailto:arunodayinnovationsandresearch@gmail.com">
+              <a
+                className="text-xs pp1:text-sm md:text-base mr-2"
+                href="mailto:arunodayinnovationsandresearch@gmail.com"
+              >
                 arunodayinnovationsandresearch@gmail.com
               </a>
             </div>
@@ -142,7 +173,10 @@ const Footer = () => {
 
       <div className="flex items-center text-center justify-center bg-black p-2">
         <FontAwesomeIcon className="sm:mr-1" icon="fa-regular fa-copyright" />
-        <p>Copyright {currentYear} | ARUNODAY INNOVATIONS AND RESEARCH | All Rights Reserved</p>
+        <p>
+          Copyright {currentYear} | ARUNODAY INNOVATIONS AND RESEARCH | All
+          Rights Reserved
+        </p>
       </div>
     </footer>
   );

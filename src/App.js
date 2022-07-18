@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import { FontAwesomeIcon } from './components/FontAwesomeIcons'
+import { FontAwesomeIcon } from "./components/FontAwesomeIcons";
 import Gallery from "./pages/Gallery";
 import Team from "./pages/Team";
 import About from "./pages/About";
-import Projects from './pages/Projects';
-import Carrier from './pages/Carrier';
+import Projects from "./pages/Projects";
+import Carrier from "./pages/Carrier";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/team" element={<Team />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/carrier" element={<Carrier />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
