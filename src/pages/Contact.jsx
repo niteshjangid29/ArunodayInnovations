@@ -43,7 +43,7 @@ const Contact = () => {
 
               <div className="flex md:flex-row flex-col items-center border-2 py-2 px-3 rounded-lg my-2 font-[Roboto]">
                 <img
-                  className="w-[75px] h-[80px] bg-[#f0f3f0] py-[20px] px-[17px] rounded-[10px] mr-[18px] hover:invert hover:bg-[#0057ff]"
+                  className="w-[75px] h-[80px] bg-[#f0f3f0] py-[20px] px-[17px] rounded-[10px] mr-[18px] transition-all delay-75 hover:invert hover:bg-[#008beb]"
                   src="./images/location.png"
                   alt="Location"
                   draggable="false"
@@ -60,7 +60,7 @@ const Contact = () => {
 
               <div className="flex md:flex-row flex-col border-2 py-2 px-3 rounded-lg my-2 items-center">
                 <img
-                  className="w-[75px] h-[80px] bg-[#f0f3f0] py-[20px] px-[17px] rounded-[10px] mr-[18px] hover:invert hover:bg-[#0057ff]"
+                  className="w-[75px] h-[80px] bg-[#f0f3f0] py-[20px] px-[17px] rounded-[10px] mr-[18px] transition-all delay-75 hover:invert hover:bg-[#008beb]"
                   src="./images/email.png"
                   alt="Location"
                   draggable="false"
@@ -91,7 +91,7 @@ const Contact = () => {
 
               <div className="flex md:flex-row flex-col border-2 py-2 px-3 rounded-lg my-2 items-center font-[Roboto]">
                 <img
-                  className="w-[75px] h-[80px] bg-[#f0f3f0] py-[20px] px-[17px] rounded-[10px] mr-[18px] hover:invert hover:bg-[#0057ff]"
+                  className="w-[75px] h-[80px] bg-[#f0f3f0] py-[20px] px-[17px] rounded-[10px] mr-[18px] transition-all delay-75 hover:invert hover:bg-[#008beb]"
                   src="./images/phone-call.png"
                   alt="Location"
                   draggable="false"
