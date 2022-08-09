@@ -9,18 +9,33 @@ const About = () => {
 
       <div>
         <div className="flex flex-col py-16 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
-          <h1 className="font-[poppins] font-[600] text-3xl text-center mb-5">- About Us -</h1>
+          <h1 className="font-[poppins] font-[600] md:text-3xl text-2xl text-center mb-5">
+            - About Us -
+          </h1>
           {/* <img className="md:w-3/6 w-5/6 mb-3 m-auto" src="./images/logo.png" alt="logo" draggable="false" /> */}
           <div>
-            <p className="font-[poppins] tracking-wide text-justify">Arunoday Innovations and Research is one of the fastest-growing companies for automation and robotics. Its innovations on Automated Mobile Robots used in housing and urban industries, Agriculture, Waste management division, Power plants, and other sectors to safely carry different weights of payload from one industrial place to another industrial place. Arunoday Innovations and Research is a start-up from IIT Roorkee, one of the prestigious institutes of India. Its board of directors includes Professor and Research Scholar from IIT Roorkee. Arunoday Innovations and Research has a highly dedicated team of professionals, including Ph.D., M.Tech, and B.Tech students from IITs and other top institutes in India. It has outreach in more than three states of India.</p>
+            <p className="font-[poppins] tracking-wide text-justify">
+              Arunoday Innovations and Research is one of the fastest-growing
+              companies for automation and robotics. Its innovations on
+              Automated Mobile Robots used in housing and urban industries,
+              Agriculture, Waste management division, Power plants, and other
+              sectors to safely carry different weights of payload from one
+              industrial place to another industrial place. Arunoday Innovations
+              and Research is a start-up from IIT Roorkee, one of the
+              prestigious institutes of India. Its board of directors includes
+              Professor and Research Scholar from IIT Roorkee. Arunoday
+              Innovations and Research has a highly dedicated team of
+              professionals, including Ph.D., M.Tech, and B.Tech students from
+              IITs and other top institutes in India. It has outreach in more
+              than three states of India.
+            </p>
           </div>
         </div>
       </div>
 
-
       <div className="bg-orange-100 py-8">
         <div className="flex flex-col py-16 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
-          <h1 className="font-[poppins] font-[600] text-3xl text-center">
+          <h1 className="font-[poppins] font-[600] md:text-3xl text-2xl text-center">
             - Mission and Vision -
           </h1>
           <div>
@@ -53,7 +68,7 @@ const About = () => {
 
       <div>
         <div className="flex flex-col py-20 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto">
-          <h1 className="font-[poppins] font-[600] text-3xl text-center mb-5">
+          <h1 className="font-[poppins] font-[600] md:text-3xl text-2xl text-center mb-5">
             - Our Achievements -
           </h1>
           <ul className="ml-5 tracking-wide text-justify">
@@ -86,7 +101,7 @@ const About = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -18,7 +18,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
+          // document.getElementById("hello").innerText = "Form Submitted";
+          alert("Form Submitted");
         },
         (error) => {
           console.log(error.text);
@@ -145,6 +147,7 @@ const Contact = () => {
                   placeholder="Your Message"
                 ></textarea>
                 <input
+                  id="hello"
                   className="outline-none p-2 px-5 border-2 border-black cursor-pointer bg-yellow-100 m-2 rounded-md max-w-fit font-[600] hover:bg-black hover:text-white transition-all delay-75"
                   type="submit"
                   value="Submit"
@@ -153,6 +156,13 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+        {/* <div
+          className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+          id="my_modal"
+        >
+          <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white`"></div>
+        </div> */}
 
         <iframe
           className="w-full h-80"

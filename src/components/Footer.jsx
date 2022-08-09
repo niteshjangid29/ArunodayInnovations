@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#2d2f39] text-white font-[poppins]">
       <div className="text-center py-12">
-        <h1 className="text-3xl font-[500] mb-4">Our Social Media</h1>
+        <h1 className="text-3xl font-[500] mb-5">Our Social Media</h1>
         <div className="flex justify-center text-black">
           <a href="/">
             <FontAwesomeIcon

@@ -75,7 +75,7 @@ const Sponsors = () => {
         {sliderData.map((slide, index) => {
           return (
             <img
-              className="w-16 p-2 md:p-6 basis-1/6"
+              className="w-16 p-2 md:p-7 basis-1/5"
               src={slide.logo}
               alt={slide.title}
               key={index}
@@ -83,7 +83,7 @@ const Sponsors = () => {
             />
           );
         })}
-        
+
         {/* <img
           className="w-16 p-2 md:p-6 basis-1/5"
           src="./images/DST.png"
