@@ -11,7 +11,7 @@ const Carrier = () => {
           - Opening Positions -
         </h1>
         {/* flex flex-col py-20 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto */}
-        <ul className="ml-5 tracking-wide text-center">
+        <ul className="ml-5 tracking-wide text-center text-lg">
           <li className="font-[poppins] my-3">Come Soon for internship</li>
           <li className="font-[poppins] my-3">JRF Position</li>
         </ul>

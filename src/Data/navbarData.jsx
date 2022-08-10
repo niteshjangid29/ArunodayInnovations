@@ -1,8 +1,8 @@
 export const navbarItems = [
-  {
-    itemName: "Home",
-    itemUrl: "/",
-  },
+  // {
+  //   itemName: "Home",
+  //   itemUrl: "/",
+  // },
   {
     itemName: "About",
     itemUrl: "/about",
@@ -10,6 +10,10 @@ export const navbarItems = [
   {
     itemName: "Projects",
     itemUrl: "/projects",
+  },
+  {
+    itemName: "Carrier",
+    itemUrl: "/carrier",
   },
   {
     itemName: "Team",

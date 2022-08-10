@@ -11,14 +11,22 @@ const Projects = () => {
           - Ongoing Projects -
         </h1>
         {/* flex flex-col py-20 md:py-24 md:w-4/6 sm:w-10/12 w-11/12 m-auto */}
-        <ul className="ml-5 tracking-wide text-justify">
+        <ul className="ml-5 tracking-wide text-justify text-lg">
           <li className="list-decimal font-[poppins] my-3">
-            Multi-Agent-based Low-Cost Automated Mobile Robots (AMRs) for Indian
-            Industries.
+            "Multi-Agent-based Low-Cost Automated Mobile Robots (AMRs) for
+            Indian Industries."
+            <br />
+            <span className="text-sm">
+              - funded by DST-NIDHI PRAYAS Govt. of India
+            </span>
           </li>
           <li className="list-decimal font-[poppins] my-3">
-            Design and development of a low-cost compact automated guided
-            vehicle for payload movement in housing and urban industries
+            "Design and development of a low-cost compact automated guided
+            vehicle for payload movement in housing and urban industries."
+            <br />
+            <span className="text-sm">
+              - funded by iHUB Divyasampark IIT Roorkee
+            </span>
           </li>
         </ul>
       </div>

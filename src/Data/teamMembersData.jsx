@@ -5,7 +5,7 @@ export const teamMembers = [
     position: "Director & Advisor",
     about:
       "Prof. Sohom Chakrabarty is working as Assistant Professor in Electrical Engineering Department of Indian Institute of Technology Roorkee, where he joined in 2016. His fields of interest are sliding mode control, multi-Agent system, reinforcement learning based control and design and control of unmanned autonomous vehicles. He is Senior Member of IEEE and IEI.",
-    url: "/team",
+    url: "https://www.iitr.ac.in/~EE/Sohom_Chakrabarty",
   },
   {
     name: "Mr. Samsaptak Ghosh",

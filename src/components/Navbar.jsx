@@ -15,7 +15,7 @@ function Nav() {
                 <Link to="/">
                   <img
                     className="h-12"
-                    src="./images/logo.png"
+                    src="./images/logo-new.png"
                     alt="LOGO"
                     draggable="false"
                   />
