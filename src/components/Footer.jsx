@@ -63,7 +63,7 @@ const Footer = () => {
       <hr className="w-full h-0.5 border-none bg-white" />
 
       <div className="flex flex-col lg:flex-row py-10 lg:w-11/12 m-auto items-center">
-        <div className="lg:basis-2/5 w-11/12 sm:w-5/6 md:w-4/6 bg-gray-300 text-black p-5 rounded-md">
+        <div className="lg:basis-2/5 w-11/12 sm:w-5/6 md:w-4/6 bg-gray-600 text-black p-5 rounded-md">
           <form onSubmit={sendEmail} className="flex flex-col items-center">
             <input
               className="outline-none border-2 p-2 bg-yellow-100 m-2 rounded-md focus:border-black w-full"
@@ -105,7 +105,7 @@ const Footer = () => {
               <Link to="/team">Team</Link>
             </li>
             <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
-              <Link to="/carrier">Carrier</Link>
+              <Link to="/careers">Careers</Link>
             </li>
             <li className="mx-1 xs:p-1 hover:text-orange-500 transition-all delay-75">
               <Link to="/projects">Projects</Link>

@@ -12,8 +12,8 @@ export const navbarItems = [
     itemUrl: "/projects",
   },
   {
-    itemName: "Carrier",
-    itemUrl: "/carrier",
+    itemName: "Careers",
+    itemUrl: "/careers",
   },
   {
     itemName: "Team",

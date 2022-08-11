@@ -5,7 +5,7 @@ import Gallery from "./pages/Gallery";
 import Team from "./pages/Team";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Carrier from "./pages/Carrier";
+import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/gallery" element={<Gallery />}></Route>
           <Route exact path="/team" element={<Team />}></Route>
           <Route exact path="/projects" element={<Projects />}></Route>
-          <Route exact path="/carrier" element={<Carrier />}></Route>
+          <Route exact path="/careers" element={<Careers />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
