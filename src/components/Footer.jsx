@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import contactInfo from "../config/default";
+import swal from "sweetalert";
 
 const Footer = () => {
   let currentYear = new Date().getFullYear();
+  // const [isTextVisible, setIsTextVisible] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,6 +22,12 @@ const Footer = () => {
       .then(
         (result) => {
           console.log(result.text);
+          swal({
+            title: "Thanks!",
+            text: "You response have been recorded.",
+            icon: "success",
+            button: "Ok",
+          });
         },
         (error) => {
           console.log(error.text);
@@ -85,12 +93,24 @@ const Footer = () => {
               cols="30"
               rows="4"
               placeholder="Messages"
+              required
             ></textarea>
             <input
               className="outline-none p-2 px-5 border-2 border-black cursor-pointer bg-yellow-100 m-2 rounded-md max-w-fit font-[600] hover:bg-black hover:text-white transition-all delay-75"
               type="submit"
               value="Submit"
             />
+            {/* <p
+              className={`${
+                isTextVisible ? "visible text-sm text-green-400" : "hidden"
+              }`}
+            >
+              <FontAwesomeIcon
+                className="mr-1"
+                icon="fa-solid fa-circle-check"
+              />
+              Form submitted successfully!
+            </p> */}
           </form>
         </div>
         <div className="lg:basis-1/5 flex flex-col text-center my-5">

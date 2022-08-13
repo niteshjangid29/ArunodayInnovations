@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swal-modal {
+  font-family: "Poppins" !important;
+}
+.swal-button {
+  background: #ed8936 !important;
+  border-radius: 5px;
+}
+.swal-button-container::before,
+.swal-button-container::after {
+  border-color: yellow !important;
+}
