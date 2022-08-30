@@ -20,7 +20,15 @@ export const gallery = [
     title: "img5",
   },
   {
-    image: "./images/img5.jpeg",
+    image: "./images/img6.jpeg",
     title: "img6",
+  },
+  {
+    image: "./images/img7.jpeg",
+    title: "img7",
+  },
+  {
+    image: "./images/img8.jpeg",
+    title: "img8",
   },
 ];

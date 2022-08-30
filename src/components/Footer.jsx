@@ -41,6 +41,18 @@ const Footer = () => {
       <div className="text-center py-12">
         <h1 className="text-3xl font-[500] mb-5">Our Social Media</h1>
         <div className="flex justify-center text-black">
+          <a href="https://www.facebook.com/ArunodayFounderDirector/">
+            <FontAwesomeIcon
+              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
+              icon="fa-brands fa-facebook-f"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/arunoday-innovations-and-research-46988b219/">
+            <FontAwesomeIcon
+              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
+              icon="fa-brands fa-linkedin-in"
+            />
+          </a>
           <a href="/">
             <FontAwesomeIcon
               className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
@@ -51,18 +63,6 @@ const Footer = () => {
             <FontAwesomeIcon
               className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
               icon="fa-brands fa-twitter"
-            />
-          </a>
-          <a href="/">
-            <FontAwesomeIcon
-              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
-              icon="fa-brands fa-facebook-f"
-            />
-          </a>
-          <a href="/">
-            <FontAwesomeIcon
-              className="h-[30px] w-[28px] mx-1.5 bg-white transition-all delay-125 hover:text-white hover:bg-orange-500 hover:-translate-y-1 hover:scale-105 px-[7px] py-[7px] rounded-lg"
-              icon="fa-brands fa-linkedin-in"
             />
           </a>
         </div>
