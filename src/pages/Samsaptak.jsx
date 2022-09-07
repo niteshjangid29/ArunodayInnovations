@@ -35,6 +35,16 @@ const s_ghosh = () => {
         </div>
         <div className="w-40 flex justify-center text-red-500 my-5 mx-auto md:mx-0">
           <a
+            href="mailto: ceo@arunodayinnovations.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              className="h-[20px] w-fit mx-1.5 px-[7px] py-[7px] rounded-lg"
+              icon="fa-solid fa-envelope"
+            />
+          </a>
+          <a
             href="https://www.facebook.com/samsaptak.ghosh.5/"
             rel="noreferrer"
             target="_blank"
@@ -60,7 +70,7 @@ const s_ghosh = () => {
             rel="noreferrer"
           >
             <FontAwesomeIcon
-              className="h-[21px] w-fit mx-1.5 px-[7px] py-[7px] rounded-lg"
+              className="h-[20px] w-fit mx-1.5 px-[7px] py-[7px] rounded-lg"
               icon="fa-solid fa-envelope"
             />
           </a>
