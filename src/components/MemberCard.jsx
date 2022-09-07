@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
 const MemberCard = (props) => {
   return (
@@ -12,13 +13,14 @@ const MemberCard = (props) => {
         />
       </div>
       <div className="xl:basis-3/4 md:basis-2/3 flex flex-col p-5">
-        <h1 className="font-[600] text-lg">{props.name}</h1>
-        <h2 className="font-semibold text-md">{props.position}</h2>
+        <a href={props.url}>
+          <h1 className="font-[600] text-lg">{props.name}</h1>
+        </a>
+        <h2 className="font-semibold text-md text-red-500">{props.position}</h2>
         <p className="text-justify">{props.about}</p>
         <div className="flex w-full justify-end">
           <a
             className="pt-2 pb-2.5 px-3 rounded-md leading-none bg-red-500 text-white font-semibold"
-            target="_blank"
             rel="noopener noreferrer"
             href={props.url}
           >

@@ -13,6 +13,6 @@ export const teamMembers = [
     position: "Founder Director & CEO",
     about:
       "Mr. Samsaptak Ghosh is working towards his Ph.D. at the Department of Electrical Engineering, Indian Institute of Technology Roorkee. Before joining his Ph.D., he worked as an Assistant Professor at Electrical Engineering Department of Modern Institute of Technology, MAKAUT. He does research in Electrical Engineering, Robot Control, Mobile Robotics, and Control Systems Engineering.",
-    url: "/team",
+    url: "/samsaptak-ghosh",
   },
 ];

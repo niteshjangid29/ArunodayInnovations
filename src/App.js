@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import Samsaptak from "./pages/Samsaptak";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/projects" element={<Projects />}></Route>
           <Route exact path="/careers" element={<Careers />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/samsaptak-ghosh" element={<Samsaptak />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

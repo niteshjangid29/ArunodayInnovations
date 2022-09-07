@@ -97,6 +97,10 @@ const About = () => {
               development of a low-cost compact automated guided vehicle for
               payload movement in housing and urban industries.”
             </li>
+            <li className="list-decimal font-[poppins] my-3">
+              Arunoday Innovations and Research is recognized by the Ministry of
+              Micro, Small and Medium Enterprises, Government of India (MSME).
+            </li>
           </ul>
         </div>
       </div>

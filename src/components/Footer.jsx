@@ -156,6 +156,18 @@ const Footer = () => {
           <div className="flex flex-col border-2 py-2 px-3 rounded-lg my-2">
             <div className="flex items-center">
               <FontAwesomeIcon
+                className="text-xl mr-2"
+                icon="fa-solid fa-envelope"
+              />
+              <a
+                className="text-sm"
+                href="mailto:support@arunodayinnovations.com"
+              >
+                support@arunodayinnovations.com
+              </a>
+            </div>
+            <div className="flex items-center">
+              <FontAwesomeIcon
                 className="hidden pp2:block md:text-xl mr-2"
                 icon="fa-solid fa-envelope"
               />
@@ -171,7 +183,7 @@ const Footer = () => {
                 className="text-xl mr-2"
                 icon="fa-solid fa-envelope"
               />
-              <a href="mailto:director.arunoday@gmail.com">
+              <a className="text-sm" href="mailto:director.arunoday@gmail.com">
                 director.arunoday@gmail.com
               </a>
             </div>
