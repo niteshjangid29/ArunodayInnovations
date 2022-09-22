@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col h-[calc(100vh-65px)] text-center p-3">
-        <div className="m-auto">
+      <div className="flex flex-col h-[calc(100vh-65px)] text-center p-3 header">
+        <div className="pb-20 m-auto md:mt-20">
           <h1 className="font-[poppins] font-[600] md:text-5xl text-3xl mb-10">
             <span className="md:text-3xl text-2xl">Welcome to</span>
             <br />
@@ -19,7 +19,7 @@ const Home = () => {
           </h1>
           <Link
             to="/about"
-            className="font-[poppins] font-[500] bg-orange-500 py-2 px-6 rounded-md text-base text-white hover:text-lg transition-all delay-75"
+            className="font-[poppins] font-[500] bg-orange-500 py-2 md:mr-4 mr-0 px-6 rounded-md text-base text-white hover:text-lg transition-all delay-75"
           >
             Explore
           </Link>

@@ -13,3 +13,28 @@
 .swal-button-container::after {
   border-color: yellow !important;
 }
+
+.header {
+  background: url("./../public/images/iit.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    background: url("./../public/images/iitMobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    background: url("./../public/images/iitMobile1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+}
