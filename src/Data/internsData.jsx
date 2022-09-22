@@ -53,7 +53,7 @@ export const MechanicalInterns = [
     url: "./images/Interns/Venkata Sai Mukesh Thota.png",
   },
   {
-    name: "Sameer Talwar",
+    name: "Soham Das Gupta",
     url: "./images/Interns/Soham Das Gupta.png",
   },
 ];
